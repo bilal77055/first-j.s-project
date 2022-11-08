@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/753274742f.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+
+const addressbar = document.createElement("div")
+        addressbar.style.width = "100%"
+        addressbar.style.height = "max-content"
+        // addressbar.style.border="1px solid black"
+        addressbar.style.display = "flex"
+        // addressbar.style.
+        document.body.appendChild(addressbar)
+
+        var address = document.createElement("div")
+        address.style.width = "34%"
+        address.style.height = "12vh"
+        address.style.border = "1px solid silver "
+        address.style.position = "relative"
+        address.style.display = "flex"
+        address.style.justifyContent = "center"
+        address.style.alignItems = "center"
+        address.style.flexDirection = "column"
+        addressbar.appendChild(address)
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-solid fa-location-dot")
+        icon.style.fontSize = "40px"
+        icon.style.color = "green"
+        icon.style.position = "absolute"
+        icon.style.left = "24%"
+        // icon.style.alignSelf="flex-start"
+        address.appendChild(icon)
+
+        var heading = document.createElement("h1")
+        heading.innerHTML = "OUR OFFICE"
+        heading.style.fontSize = "20px"
+        heading.style.marginLeft = "-20px"
+        heading.style.fontWeight = "600"
+        address.appendChild(heading)
+
+        var addressh1 = document.createElement("p")
+        addressh1.innerHTML = "123 Street, New York, USA"
+        addressh1.style.color = "slategrey"
+        addressh1.style.marginLeft = "50px"
+        addressh1.style.marginTop = "5px"
+        address.appendChild(addressh1)
+
+        var address = document.createElement("div")
+        address.style.width = "33%"
+        address.style.height = "12vh"
+        address.style.border = "1px solid silver "
+        address.style.position = "relative"
+        address.style.display = "flex"
+        address.style.justifyContent = "center"
+        address.style.alignItems = "center"
+        address.style.flexDirection = "column"
+        addressbar.appendChild(address)
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-regular fa-envelope-open")
+        icon.style.fontSize = "40px"
+        icon.style.color = "green"
+        icon.style.position = "absolute"
+        icon.style.left = "24%"
+        // icon.style.alignSelf="flex-start"
+        address.appendChild(icon)
+
+        var heading = document.createElement("h1")
+        heading.innerHTML = "EMAIL US"
+        heading.style.fontSize = "20px"
+        heading.style.marginLeft = "-20px"
+        heading.style.fontWeight = "600"
+        address.appendChild(heading)
+
+        var addressh1 = document.createElement("p")
+        addressh1.innerHTML = "mail@domain.com"
+        addressh1.style.color = "slategrey"
+        addressh1.style.marginLeft = "27px"
+        addressh1.style.marginTop = "5px"
+        address.appendChild(addressh1)
+
+        var address = document.createElement("div")
+        address.style.width = "33%"
+        address.style.height = "12vh"
+        address.style.border = "1px solid silver "
+        address.style.position = "relative"
+        address.style.display = "flex"
+        address.style.justifyContent = "center"
+        address.style.alignItems = "center"
+        address.style.flexDirection = "column"
+        addressbar.appendChild(address)
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-solid fa-mobile-screen-button")
+        icon.style.fontSize = "40px"
+        icon.style.color = "green"
+        icon.style.position = "absolute"
+        icon.style.left = "26%"
+        // icon.style.alignSelf="flex-start"
+        address.appendChild(icon)
+
+        var heading = document.createElement("h1")
+        heading.innerHTML = "CALL US"
+        heading.style.fontSize = "20px"
+        heading.style.marginLeft = "-20px"
+        heading.style.fontWeight = "600"
+        address.appendChild(heading)
+
+        var addressh1 = document.createElement("p")
+        addressh1.innerHTML = "+012 345 6789"
+        addressh1.style.color = "slategrey"
+        addressh1.style.marginLeft = "10px"
+        addressh1.style.marginTop = "5px"
+        address.appendChild(addressh1)
+
+
+
+        // <<<<<<<<<<<<<<<<<<<<<<<<<<header>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        let header = document.createElement("div")
+        header.style.height = "15vh"
+        // header.style.border = "1px solid black"
+        header.style.display = "flex"
+        header.style.justifyContent = "space-between"
+        document.body.appendChild(header)
+
+        let logo = document.createElement("div")
+        // logo.style.border = "1px solid black"
+        logo.style.width = "max-content"
+        logo.style.display = "flex"
+        logo.style.margin = "25px 40px"
+        header.appendChild(logo)
+
+        let headericon = document.createElement("i")
+        headericon.setAttribute("class", "fa-solid fa-house-laptop")
+        headericon.style.color = "green"
+        headericon.style.fontSize = "40px"
+        logo.appendChild(headericon)
+
+        let headerh1 = document.createElement("h1")
+        headerh1.innerHTML = "PET SHOP"
+        headerh1.style.marginLeft = "20px"
+        headerh1.style.color = " rgb(49, 45, 45)"
+        logo.appendChild(headerh1)
+
+        let nav = document.createElement("div")
+        // nav.style.border = "1px solid red"
+        header.appendChild(nav)
+
+        let navul = document.createElement("ul")
+        // navul.style.border = "1px solid green"
+        navul.style.display = "flex"
+        navul.style.padding = ""
+        navul.style.listStyle = "none"
+        header.appendChild(navul)
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "HOME"
+        ulli.style.margin = "0 20px"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontWeight = "700"
+        ulli.style.fontSize = "17px"
+        ulli.style.color = "#7AB730"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "ABOUT"
+        ulli.style.margin = "0 20px"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontWeight = "700"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "SERVICE"
+        ulli.style.margin = "0 20px"
+        ulli.style.fontWeight = "700"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "PRODUCT"
+        ulli.style.margin = "0 20px"
+        ulli.style.fontWeight = "700"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "PAGES"
+        ulli.style.margin = " 0 20px"
+        ulli.style.fontWeight = "700"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "CONTACT"
+        ulli.style.border = "2x solid blue"
+        ulli.style.backgroundColor = "#7AB730"
+        ulli.style.color = "white"
+        ulli.style.boxSizing = "border-box"
+        ulli.style.padding = "30px 50px"
+        ulli.style.marginLeft = " 10px"
+        ulli.style.fontWeight = "500"
+        ulli.style.fontSize = "20px"
+        navul.appendChild(ulli)
+
+
+        // <<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+         // <--------------Product-Section-Start------------->
+      // <================================================>
+      var pro_container = document.createElement("div");
+      console.log(pro_container);
+      pro_container.style.height = "auto";
+      pro_container.style.width = "100%";
+      // pro_container.style.border = "1px solid black";
+      pro_container.style.paddingBottom = "5%";
+      document.body.appendChild(pro_container);
+
+      var content_box = document.createElement("div");
+      console.log(content_box);
+      content_box.style.height = "auto";
+      content_box.style.width = "60%";
+      content_box.style.marginLeft = "7.5%";
+      content_box.style.marginTop = "4%";
+      content_box.style.borderLeft = "5px solid #7AB730";
+      content_box.style.padding = "0px 50px";
+      pro_container.appendChild(content_box);
+
+      var para1 = document.createElement("p");
+      console.log(para1);
+      para1.style.color = "#7AB730";
+      para1.style.fontFamily = "'Roboto', sans-serif";
+      para1.style.fontWeight = "500";
+      para1.innerHTML = "PRODUCTS";
+      content_box.appendChild(para1);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "black";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "50px";
+      h1.innerHTML = "PRODUCTS FOR YOUR </br> BEST FRIENDS";
+      content_box.appendChild(h1);
+
+      // <-----------------Quality-Pet-Food-Section-Start---------------->
+      // <================================================================>
+
+      var quality_box = document.createElement("div");
+      console.log(quality_box);
+      quality_box.style.height = "auto";
+      quality_box.style.width = "85%";
+      quality_box.style.margin = "auto";
+      quality_box.style.marginTop = "3%";
+      // quality_box.style.border = "1px solid red";
+      quality_box.style.display = "flex";
+      quality_box.style.justifyContent = "space-between";
+      pro_container.appendChild(quality_box);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      quality_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/product-1.png)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_smbx1.style.marginTop = "20px";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "16px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "QUALITY PET FOODS";
+      pic_smbx2.appendChild(h6);
+
+      var h5 = document.createElement("h5");
+      console.log(h5);
+      h5.style.color = "#7AB730";
+      h5.style.fontFamily = "'Roboto', sans-serif";
+      h5.style.fontWeight = "700";
+      h5.style.fontSize = "20px";
+      h5.style.marginTop = "5px";
+      h5.innerHTML = "$199.00";
+      pic_smbx2.appendChild(h5);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      quality_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/product-2.png)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_smbx1.style.marginTop = "20px";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "16px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "QUALITY PET FOODS";
+      pic_smbx2.appendChild(h6);
+
+      var h5 = document.createElement("h5");
+      console.log(h5);
+      h5.style.color = "#7AB730";
+      h5.style.fontFamily = "'Roboto', sans-serif";
+      h5.style.fontWeight = "700";
+      h5.style.fontSize = "20px";
+      h5.style.marginTop = "5px";
+      h5.innerHTML = "$199.00";
+      pic_smbx2.appendChild(h5);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      quality_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/product-3.png)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_smbx1.style.marginTop = "20px";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "16px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "QUALITY PET FOODS";
+      pic_smbx2.appendChild(h6);
+
+      var h5 = document.createElement("h5");
+      console.log(h5);
+      h5.style.color = "#7AB730";
+      h5.style.fontFamily = "'Roboto', sans-serif";
+      h5.style.fontWeight = "700";
+      h5.style.fontSize = "20px";
+      h5.style.marginTop = "5px";
+      h5.innerHTML = "$199.00";
+      pic_smbx2.appendChild(h5);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      quality_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/product-4.png)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_smbx1.style.marginTop = "20px";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "16px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "QUALITY PET FOODS";
+      pic_smbx2.appendChild(h6);
+
+      var h5 = document.createElement("h5");
+      console.log(h5);
+      h5.style.color = "#7AB730";
+      h5.style.fontFamily = "'Roboto', sans-serif";
+      h5.style.fontWeight = "700";
+      h5.style.fontSize = "20px";
+      h5.style.marginTop = "5px";
+      h5.innerHTML = "$199.00";
+      pic_smbx2.appendChild(h5);
+
+      var arrow_mainbx = document.createElement("div");
+      console.log(arrow_mainbx);
+      arrow_mainbx.style.height = "auto";
+      arrow_mainbx.style.width = "8%";
+      // arrow_mainbx.style.border = "1px solid black";
+      arrow_mainbx.style.margin = "auto";
+      arrow_mainbx.style.marginTop = "3%";
+      arrow_mainbx.style.display = "flex";
+      arrow_mainbx.style.justifyContent = "space-between";
+      pro_container.appendChild(arrow_mainbx);
+
+      var arrow_smbx1 = document.createElement("div");
+      console.log(arrow_smbx1);
+      arrow_smbx1.style.height = "7vh";
+      arrow_smbx1.style.width = "45%";
+      // arrow_smbx1.style.border = "1px solid black";
+      arrow_smbx1.style.textAlign = "center";
+      arrow_smbx1.style.backgroundColor = "#7AB730";
+      arrow_mainbx.appendChild(arrow_smbx1);
+
+      var ic = document.createElement("i");
+      console.log(ic);
+      ic.style.color = "white";
+      ic.style.lineHeight = "7vh";
+      ic.style.fontSize = "20px";
+      ic.setAttribute("class", "fa-solid fa-arrow-left");
+      arrow_smbx1.appendChild(ic);
+
+      var arrow_smbx1 = document.createElement("div");
+      console.log(arrow_smbx1);
+      arrow_smbx1.style.height = "7vh";
+      arrow_smbx1.style.width = "45%";
+      // arrow_smbx1.style.border = "1px solid black";
+      arrow_smbx1.style.textAlign = "center";
+      arrow_smbx1.style.backgroundColor = "#7AB730";
+      arrow_mainbx.appendChild(arrow_smbx1);
+
+      var ic = document.createElement("i");
+      console.log(ic);
+      ic.style.color = "white";
+      ic.style.lineHeight = "7vh";
+      ic.style.fontSize = "20px";
+      ic.setAttribute("class", "fa-solid fa-arrow-right");
+      arrow_smbx1.appendChild(ic);
+
+      // <--------------Special-Offer-Section-Start------------->
+      // <=====================================================>
+
+      var spo_container = document.createElement("div");
+      console.log(spo_container);
+      spo_container.style.height = "65vh";
+      spo_container.style.width = "100%";
+      // spo_container.style.border = "1px solid black";
+      spo_container.style.backgroundImage = "url(./Pet-images/offer.jpg)";
+      spo_container.style.backgroundSize = "cover";
+      spo_container.style.padding = "1px";
+      document.body.appendChild(spo_container);
+
+      var content_box = document.createElement("div");
+      console.log(content_box);
+      content_box.style.height = "auto";
+      content_box.style.width = " max-content";
+      content_box.style.marginLeft = "7.5%";
+      content_box.style.marginTop = "4%";
+      content_box.style.borderLeft = "5px solid black";
+      content_box.style.padding = "0px 50px";
+      spo_container.appendChild(content_box);
+
+      var para1 = document.createElement("p");
+      console.log(para1);
+      para1.style.color = "black";
+      para1.style.fontFamily = "'Roboto', sans-serif";
+      para1.style.fontWeight = "500";
+      para1.innerHTML = "SPECIAL OFFER";
+      content_box.appendChild(para1);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "white";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "50px";
+      h1.innerHTML = "SAVE 50% ON ALL ITEMS </br> YOUR FIRST ORDER";
+      content_box.appendChild(h1);
+
+      var content_box = document.createElement("div");
+      console.log(content_box);
+      content_box.style.height = "auto";
+      content_box.style.width = " max-content";
+      content_box.style.marginLeft = "7.5%";
+      content_box.style.marginTop = "4%";
+      // content_box.style.borderLeft = "1px solid black";
+      spo_container.appendChild(content_box);
+
+      var para1 = document.createElement("p");
+      console.log(para1);
+      para1.style.color = "white";
+      para1.style.fontFamily = "'Roboto', sans-serif";
+      // para1.style.fontWeight = "400";
+      para1.style.fontSize = "18px";
+      para1.innerHTML =
+        "Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor </br> justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo </br> lorem. Elitr ut dolores magna sit. Sea dolore sed et.";
+      content_box.appendChild(para1);
+
+      var btn1 = document.createElement("button");
+      console.log(btn1);
+      btn1.style.padding = "18px 40px";
+      btn1.style.backgroundColor = "white";
+      btn1.innerText = "SHOP NOW";
+      btn1.style.color = "black";
+      btn1.style.border = "1px solid white";
+      btn1.style.fontFamily = "'Roboto', sans-serif";
+      btn1.style.fontWeight = "500";
+      btn1.style.fontSize = "16px";
+      btn1.style.marginTop = "20px";
+      content_box.appendChild(btn1);
+
+      var btn1 = document.createElement("button");
+      console.log(btn1);
+      btn1.style.padding = "18px 40px";
+      btn1.style.backgroundColor = "transparent";
+      btn1.innerText = "READ MORE";
+      btn1.style.color = "white";
+      btn1.style.border = "1px solid white";
+      btn1.style.fontFamily = "'Roboto', sans-serif";
+      btn1.style.fontWeight = "500";
+      btn1.style.fontSize = "16px";
+      btn1.style.marginTop = "20px";
+      btn1.style.marginLeft = "20px";
+      content_box.appendChild(btn1);
+
+      // <--------------Pricing-Plan-Section-Start------------->
+      // <=====================================================>
+
+      var price_container = document.createElement("div");
+      console.log(price_container);
+      price_container.style.height = "auto";
+      price_container.style.width = "100%";
+      // price_container.style.border = "1px solid black";
+      price_container.style.paddingBottom = "5%";
+      document.body.appendChild(price_container);
+
+      var content_box = document.createElement("div");
+      console.log(content_box);
+      content_box.style.height = "auto";
+      content_box.style.width = "60%";
+      content_box.style.marginLeft = "7.5%";
+      content_box.style.marginTop = "4%";
+      content_box.style.borderLeft = "5px solid #7AB730";
+      content_box.style.padding = "0px 50px";
+      price_container.appendChild(content_box);
+
+      var para1 = document.createElement("p");
+      console.log(para1);
+      para1.style.color = "#7AB730";
+      para1.style.fontFamily = "'Roboto', sans-serif";
+      para1.style.fontWeight = "500";
+      para1.innerHTML = "PRICING PLAN";
+      content_box.appendChild(para1);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "black";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "50px";
+      h1.innerHTML = "COMPETITIVE PRICING </br> FOR PET SERVICES";
+      content_box.appendChild(h1);
+
+      // <============================Crads-Section-Start=================>
+      // <---------------------------------------------------------------->
+      var card_mainbx = document.createElement("div");
+      console.log(card_mainbx);
+      card_mainbx.style.height = "auto";
+      card_mainbx.style.width = "85%";
+      card_mainbx.style.margin = "auto";
+      card_mainbx.style.marginTop = "8%";
+      // card_mainbx.style.border = "1px solid red";
+      card_mainbx.style.display = "flex";
+      card_mainbx.style.justifyContent = "space-between";
+      // card_mainbx.style.position = "relative";
+      price_container.appendChild(card_mainbx);
+
+      var card_bx = document.createElement("div");
+      console.log(card_bx);
+      card_bx.style.height = "75vh";
+      card_bx.style.width = "31%";
+      // card_bx.style.border = "1px solid blue";
+      card_bx.style.backgroundColor = "#F3F3F3";
+      card_bx.style.padding = "1px";
+      card_mainbx.appendChild(card_bx);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "30px";
+      h6.style.marginTop = "50px";
+      h6.style.textAlign = "center";
+      h6.innerHTML = "BASIC";
+      card_bx.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "600";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "10px";
+      para2.style.textAlign = "center";
+      para2.innerHTML = "The Best Choice";
+      card_bx.appendChild(para2);
+
+      var numb_div = document.createElement("div");
+      console.log(numb_div);
+      numb_div.style.height = "15vh";
+      numb_div.style.width = "100%";
+      numb_div.style.backgroundColor = "#7AB730";
+      numb_div.style.marginTop = "30px";
+      numb_div.style.textAlign = "center";
+      card_bx.appendChild(numb_div);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "white";
+      h1.style.lineHeight = "15vh";
+      h1.innerText = "$49/ Mo";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "45px";
+      numb_div.appendChild(h1);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "30px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "HTML5 & CSS3";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "55%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Bootstrap v5";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "60%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Responsive Layout";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-xmark");
+      icone.style.color = "red";
+      icone.style.marginLeft = "47.5%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Browsers Compatibility";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-xmark");
+      icone.style.color = "red";
+      icone.style.marginLeft = "38.5%";
+      para2.appendChild(icone);
+
+      var btn_box = document.createElement("div");
+      console.log(btn_box);
+      btn_box.style.height = "auto";
+      btn_box.style.width = "max-content";
+      btn_box.style.margin = "auto";
+      btn_box.style.marginTop = "30px";
+      card_bx.appendChild(btn_box);
+
+      var card_btn = document.createElement("button");
+      console.log(card_btn);
+      card_btn.style.padding = "12px 35px";
+      card_btn.style.backgroundColor = "#7AB730";
+      card_btn.innerText = "ORDER NOW";
+      card_btn.style.color = "white";
+      card_btn.style.border = "1px solid white";
+      card_btn.style.fontFamily = "'Roboto', sans-serif";
+      card_btn.style.fontWeight = "500";
+      card_btn.style.fontSize = "16px";
+      btn_box.appendChild(card_btn);
+
+      var card_bx = document.createElement("div");
+      console.log(card_bx);
+      card_bx.style.height = "75vh";
+      card_bx.style.width = "31%";
+      // card_bx.style.border = "1px solid blue";
+      card_bx.style.backgroundColor = "#F3F3F3";
+      card_bx.style.marginTop = "-45px";
+      card_bx.style.padding = "1px";
+      card_mainbx.appendChild(card_bx);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "30px";
+      h6.style.marginTop = "50px";
+      h6.style.textAlign = "center";
+      h6.innerHTML = "STANDARD";
+      card_bx.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "600";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "10px";
+      para2.style.textAlign = "center";
+      para2.innerHTML = "The Best Choice";
+      card_bx.appendChild(para2);
+
+      var numb_div = document.createElement("div");
+      console.log(numb_div);
+      numb_div.style.height = "15vh";
+      numb_div.style.width = "100%";
+      numb_div.style.backgroundColor = "black";
+      numb_div.style.marginTop = "30px";
+      numb_div.style.textAlign = "center";
+      card_bx.appendChild(numb_div);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "white";
+      h1.style.lineHeight = "15vh";
+      h1.innerText = "$99/ Mo";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "45px";
+      numb_div.appendChild(h1);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "30px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "HTML5 & CSS3";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "55%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Bootstrap v5";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "60%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Responsive Layout";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "47.5%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Browsers Compatibility";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-xmark");
+      icone.style.color = "red";
+      icone.style.marginLeft = "38.5%";
+      para2.appendChild(icone);
+
+      var btn_box = document.createElement("div");
+      console.log(btn_box);
+      btn_box.style.height = "auto";
+      btn_box.style.width = "max-content";
+      btn_box.style.margin = "auto";
+      btn_box.style.marginTop = "30px";
+      card_bx.appendChild(btn_box);
+
+      var card_btn = document.createElement("button");
+      console.log(card_btn);
+      card_btn.style.padding = "12px 35px";
+      card_btn.style.backgroundColor = "#7AB730";
+      card_btn.innerText = "ORDER NOW";
+      card_btn.style.color = "white";
+      card_btn.style.border = "1px solid white";
+      card_btn.style.fontFamily = "'Roboto', sans-serif";
+      card_btn.style.fontWeight = "500";
+      card_btn.style.fontSize = "16px";
+      btn_box.appendChild(card_btn);
+
+      var card_bx = document.createElement("div");
+      console.log(card_bx);
+      card_bx.style.height = "75vh";
+      card_bx.style.width = "31%";
+      // card_bx.style.border = "1px solid blue";
+      card_bx.style.backgroundColor = "#F3F3F3";
+      card_bx.style.padding = "1px";
+      card_mainbx.appendChild(card_bx);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "30px";
+      h6.style.marginTop = "50px";
+      h6.style.textAlign = "center";
+      h6.innerHTML = "EXTENDED";
+      card_bx.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "600";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "10px";
+      para2.style.textAlign = "center";
+      para2.innerHTML = "The Best Choice";
+      card_bx.appendChild(para2);
+
+      var numb_div = document.createElement("div");
+      console.log(numb_div);
+      numb_div.style.height = "15vh";
+      numb_div.style.width = "100%";
+      numb_div.style.backgroundColor = "#7AB730";
+      numb_div.style.marginTop = "30px";
+      numb_div.style.textAlign = "center";
+      card_bx.appendChild(numb_div);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "white";
+      h1.style.lineHeight = "15vh";
+      h1.innerText = "$149/ Mo";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "45px";
+      numb_div.appendChild(h1);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "30px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "HTML5 & CSS3";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "55%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Bootstrap v5";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "60%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Responsive Layout";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "47.5%";
+      para2.appendChild(icone);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "25px";
+      para2.style.paddingLeft = " 30px";
+      para2.innerHTML = "Browsers Compatibility";
+      card_bx.appendChild(para2);
+
+      var icone = document.createElement("i");
+      console.log(icone);
+      icone.setAttribute("class", "fa-solid fa-check");
+      icone.style.color = "#7AB730";
+      icone.style.marginLeft = "38.5%";
+      para2.appendChild(icone);
+
+      var btn_box = document.createElement("div");
+      console.log(btn_box);
+      btn_box.style.height = "auto";
+      btn_box.style.width = "max-content";
+      btn_box.style.margin = "auto";
+      btn_box.style.marginTop = "30px";
+      card_bx.appendChild(btn_box);
+
+      var card_btn = document.createElement("button");
+      console.log(card_btn);
+      card_btn.style.padding = "12px 35px";
+      card_btn.style.backgroundColor = "#7AB730";
+      card_btn.innerText = "ORDER NOW";
+      card_btn.style.color = "white";
+      card_btn.style.border = "1px solid white";
+      card_btn.style.fontFamily = "'Roboto', sans-serif";
+      card_btn.style.fontWeight = "500";
+      card_btn.style.fontSize = "16px";
+      btn_box.appendChild(card_btn);
+
+      // <--------------Team-Members-Section-Start------------->
+      // <=====================================================>
+      var team_container = document.createElement("div");
+      console.log(team_container);
+      team_container.style.height = "auto";
+      team_container.style.width = "100%";
+      // team_container.style.border = "1px solid black";
+      team_container.style.paddingBottom = "5%";
+      document.body.appendChild(team_container);
+
+      var content_box = document.createElement("div");
+      console.log(content_box);
+      content_box.style.height = "auto";
+      content_box.style.width = "60%";
+      content_box.style.marginLeft = "7.5%";
+      content_box.style.marginTop = "4%";
+      content_box.style.borderLeft = "5px solid #7AB730";
+      content_box.style.padding = "0px 50px";
+      team_container.appendChild(content_box);
+
+      var para1 = document.createElement("p");
+      console.log(para1);
+      para1.style.color = "#7AB730";
+      para1.style.fontFamily = "'Roboto', sans-serif";
+      para1.style.fontWeight = "500";
+      para1.innerHTML = "TEAM MEMBERS";
+      content_box.appendChild(para1);
+
+      var h1 = document.createElement("h1");
+      console.log(h1);
+      h1.style.color = "black";
+      h1.style.fontFamily = "'Roboto', sans-serif";
+      h1.style.fontSize = "50px";
+      h1.innerHTML = "QUALIFIED PETS CARE </br> PROFESSIONALS";
+      content_box.appendChild(h1);
+
+      //  <-----------------Full-Name-Section-Start---------------->
+      //  <========================================================>
+
+      var design_box = document.createElement("div");
+      console.log(design_box);
+      design_box.style.height = "auto";
+      design_box.style.width = "85%";
+      design_box.style.margin = "auto";
+      design_box.style.marginTop = "3%";
+      // design_box.style.border = "1px solid red";
+      design_box.style.display = "flex";
+      design_box.style.justifyContent = "space-between";
+      design_box.style.position = "relative";
+      team_container.appendChild(design_box);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      design_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/team-1.jpg)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "22px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "FULL NAME";
+      pic_smbx2.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "5px";
+      para2.innerHTML = "Designation";
+      pic_smbx2.appendChild(para2);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      design_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/team-2.jpg)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "22px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "FULL NAME";
+      pic_smbx2.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "5px";
+      para2.innerHTML = "Designation";
+      pic_smbx2.appendChild(para2);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      design_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/team-3.jpg)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "22px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "FULL NAME";
+      pic_smbx2.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "5px";
+      para2.innerHTML = "Designation";
+      pic_smbx2.appendChild(para2);
+
+      var pic_mainbx = document.createElement("div");
+      console.log(pic_mainbx);
+      pic_mainbx.style.height = "auto";
+      pic_mainbx.style.width = "23%";
+      // pic_mainbx.style.border = "1px solid blue";
+      pic_mainbx.style.backgroundColor = "#F3F3F3";
+      pic_mainbx.style.padding = "1px";
+      design_box.appendChild(pic_mainbx);
+
+      var pic_smbx1 = document.createElement("div");
+      console.log(pic_smbx1);
+      pic_smbx1.style.height = "45vh";
+      pic_smbx1.style.width = "100%";
+      // pic_smbx1.style.border = "1px solid cyan";
+      pic_smbx1.style.backgroundImage = "url(./Pet-images/team-4.jpg)";
+      pic_smbx1.style.backgroundSize = "100% auto";
+      pic_smbx1.style.backgroundRepeat = "no-repeat";
+      pic_mainbx.appendChild(pic_smbx1);
+
+      var pic_smbx2 = document.createElement("div");
+      console.log(pic_smbx2);
+      pic_smbx2.style.height = "10vh";
+      pic_smbx2.style.width = "100%";
+      // pic_smbx2.style.border = "1px solid cyan";
+      pic_smbx2.style.textAlign = "center";
+      pic_mainbx.appendChild(pic_smbx2);
+
+      var h6 = document.createElement("h6");
+      console.log(h6);
+      h6.style.color = "black";
+      h6.style.fontFamily = "'Roboto', sans-serif";
+      h6.style.fontWeight = "600";
+      h6.style.fontSize = "22px";
+      h6.style.marginTop = "5px";
+      h6.innerHTML = "FULL NAME";
+      pic_smbx2.appendChild(h6);
+
+      var para2 = document.createElement("p");
+      console.log(para2);
+      para2.style.color = "#656565";
+      para2.style.fontFamily = "'Roboto', sans-serif";
+      para2.style.fontWeight = "400";
+      para2.style.fontSize = "17px";
+      para2.style.marginTop = "5px";
+      para2.innerHTML = "Designation";
+      pic_smbx2.appendChild(para2);
+
+      var arrow_mainbx = document.createElement("div");
+      console.log(arrow_mainbx);
+      arrow_mainbx.style.height = "auto";
+      arrow_mainbx.style.width = "4%";
+      // arrow_mainbx.style.border = "1px solid black";
+      arrow_mainbx.style.position = "absolute";
+      arrow_mainbx.style.top = "30%";
+      arrow_mainbx.style.right = "-1.5%";
+      arrow_mainbx.style.display = "flex";
+      arrow_mainbx.style.flexDirection = "column";
+      arrow_mainbx.style.alignItems = "center";
+      arrow_mainbx.style.justifyContent = "space-between";
+      design_box.appendChild(arrow_mainbx);
+
+      var arrow_smbx1 = document.createElement("div");
+      console.log(arrow_smbx1);
+      arrow_smbx1.style.height = "7vh";
+      arrow_smbx1.style.width = "100%";
+      // arrow_smbx1.style.border = "1px solid black";
+      arrow_smbx1.style.textAlign = "center";
+      arrow_smbx1.style.backgroundColor = "#7AB730";
+      arrow_mainbx.appendChild(arrow_smbx1);
+
+      var ic = document.createElement("i");
+      console.log(ic);
+      ic.style.color = "white";
+      ic.style.lineHeight = "7vh";
+      ic.style.fontSize = "20px";
+      ic.setAttribute("class", "fa-solid fa-arrow-left");
+      arrow_smbx1.appendChild(ic);
+
+      var arrow_smbx1 = document.createElement("div");
+      console.log(arrow_smbx1);
+      arrow_smbx1.style.height = "7vh";
+      arrow_smbx1.style.width = "100%";
+      // arrow_smbx1.style.border = "1px solid black";
+      arrow_smbx1.style.marginTop = "20px";
+      arrow_smbx1.style.textAlign = "center";
+      arrow_smbx1.style.backgroundColor = "#7AB730";
+      arrow_mainbx.appendChild(arrow_smbx1);
+
+      var ic = document.createElement("i");
+      console.log(ic);
+      ic.style.color = "white";
+      ic.style.lineHeight = "7vh";
+      ic.style.fontSize = "20px";
+      ic.setAttribute("class", "fa-solid fa-arrow-right");
+      arrow_smbx1.appendChild(ic);
+
+
+
+
+    //   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+    let footer=document.createElement("div")
+        footer.style.height="50vh"
+        // footer.style.border="1px solid black"
+        footer.style.display="flex"
+        footer.style.paddingLeft="40px"
+        footer.style.paddingTop="30px"
+        footer.style.justifyContent="center"
+        // footer.style.alignItems="center"
+        footer.style.backgroundColor="#F3F3F3"
+        document.body.appendChild(footer)
+        
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="GET IN TOUCH"
+        footerh2.style.color="#212121"
+        footercard1.appendChild(footerh2)
+
+        var footerp1=document.createElement("p")
+        footerp1.innerHTML="No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor"
+        footerp1.style.color= "#6A6565"
+        footerp1.style.margin="20px 0"
+        footerp1.style.fontSize="17px"
+        footerp1.style.letterSpacing="0.5px"
+        footercard1.appendChild(footerp1)
+
+        var footericon=document.createElement("i")
+        footericon.setAttribute("class","fa-solid fa-location-dot")
+        footericon.style.color= "#7AB730"
+        footericon.style.margin="10px 0"
+        footercard1.appendChild(footericon)
+
+        var footerp2=document.createElement("span")
+        footerp2.innerHTML="123 Street, New York, USA"
+        footerp2.style.marginLeft="10px"
+        footerp2.style.color= "#6A6565"
+        footercard1.appendChild(footerp2)
+
+        var footercard1div=document.createElement("div")
+        // footercard1div.style.border="1px black solid"
+        footercard1.appendChild(footercard1div)
+
+        var footericon=document.createElement("i")
+        footericon.setAttribute("class", "fa-regular fa-envelope-open")
+        footericon.style.color= "#7AB730"
+        footericon.style.margin="10px 0"
+        footercard1div.appendChild(footericon)
+
+        var footerp2=document.createElement("span")
+        footerp2.innerHTML="mail@domain.com"
+        footerp2.style.margin="0 10px"
+        footerp2.style.color= "#6A6565"
+        footercard1div.appendChild(footerp2)
+
+        var footericon=document.createElement("i")
+        footericon.setAttribute("class","fa-solid fa-phone")
+        footericon.style.color= "#7AB730"
+        footericon.style.margin="10px 0"
+        footercard1.appendChild(footericon)
+
+        var footerp2=document.createElement("span")
+        footerp2.innerHTML="+012 345 67890"
+        footericon.style.margin="10px 0"
+        footerp2.style.marginLeft="10px"
+        footerp2.style.color= "#6A6565"
+        footercard1.appendChild(footerp2)
+
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="QUICK LINKS"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footercard1.appendChild(footerh2)
+
+        var footerul=document.createElement("ul")
+        // footerul.style.border="2px solid red"
+        footerul.style.width="200px"
+        footerul.style.listStyle="None"
+        footerul.style.margin="10px 0"
+        footercard1.appendChild(footerul)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Home"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="About Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Meet The Team"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Our Services"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Latest Blog"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Contact Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.paddingLeft="30px"
+        footerli.style.fontWeight="500"
+        footerul.appendChild(footerli)
+
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="POPULAR LINKS"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footercard1.appendChild(footerh2)
+
+        var footerul=document.createElement("ul")
+        // footerul.style.border="2px solid red"
+        footerul.style.width="200px"
+        footerul.style.listStyle="None"
+        footerul.style.margin="10px 0"
+        footercard1.appendChild(footerul)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Home"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="About Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Meet The Team"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Our Services"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Latest Blog"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Contact Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.paddingLeft="30px"
+        footerli.style.fontWeight="500"
+        footerul.appendChild(footerli)
+
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="NEWSLETTER"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footercard1.appendChild(footerh2)
+
+        let footerinput=document.createElement("input")
+        footerinput.style.height="50px"
+        footerinput.style.width="120px"
+        footerinput.setAttribute("placeholder" , "Your Email")
+        footerinput.style.padding="0 10px"
+        footerinput.style.fontSize="16px"
+        footercard1.appendChild(footerinput)
+
+        let button=document.createElement("button")
+        button.innerHTML="SIGN UP"
+        button.style.color="white"
+        button.style.backgroundColor="#7AB730"
+        button.style.border="none"
+        button.style.height="48px"
+        button.style.width="80px"
+        button.style.fontSize="17px"
+        footercard1.appendChild(button)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="FOLLOW US"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footerh2.style.fontSize="14px"
+        footercard1.appendChild(footerh2)
+
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" , "fa-brands fa-twitter")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" ,"fa-brands fa-square-facebook")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px 6px"
+        footericons.style.margin="0 5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" , "fa-brands fa-linkedin")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px 6px"
+        // footericons.style.margin="0 5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" , "fa-brands fa-instagram")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px 6px"
+        footericons.style.margin="0 5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        var extrafooter=document.createElement("div")
+        extrafooter.style.height="10vh"
+        extrafooter.style.backgroundColor="#F3F3F3"
+        document.body.appendChild(extrafooter)
+
+        var extraaa=document.createElement("p")
+        extraaa.innerHTML="Terms & Conditions | Privacy Policy | Customer Support | Payments | Help | FAQs"
+        extraaa.style.textAlign="center"
+        extraaa.style.color="#6A6565"
+        extraaa.style.fontSize="18px"
+        extrafooter.appendChild(extraaa)
+
+        let extra1=document.createElement("div")
+        extra1.style.height="10vh"
+        extra1.style.backgroundColor="#212121"
+        extra1.style.padding="1px"
+        document.body.appendChild(extra1)
+
+        // let extra1pp=document.createElement=("div")
+        // extra1pp.style.border="3px solid red"
+        // extra1pp.style.backgroundColor="red"
+        // extra1.appendChild(extra1pp)
+
+        var extra1p=document.createElement("p")
+        extra1p.innerHTML="© Your Site Name. All Rights Reserved."
+        extra1p.style.color="white"
+        extra1p.style.width="max-content"
+        extra1p.style.margin="20px 100px"
+        extra1.appendChild(extra1p)
+
+        var extra1p=document.createElement("p")
+        extra1p.innerHTML="Designed by HTML Codex"
+        extra1p.style.color="white"
+        extra1p.style.width="max-content"
+        extra1p.style.margin="0px 1050px"
+        extra1p.style.marginTop="-40px"
+        extra1.appendChild(extra1p)
+
+
+
+
+    </script>
+</body>
+</html>

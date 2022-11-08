@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/753274742f.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+            </style>
+</head>
+<body>
+
+    <script>
+
+const addressbar = document.createElement("div")
+        addressbar.style.width = "100%"
+        addressbar.style.height = "max-content"
+        // addressbar.style.border="1px solid black"
+        addressbar.style.display = "flex"
+        // addressbar.style.
+        document.body.appendChild(addressbar)
+
+        var address = document.createElement("div")
+        address.style.width = "34%"
+        address.style.height = "12vh"
+        address.style.border = "1px solid silver "
+        address.style.position = "relative"
+        address.style.display = "flex"
+        address.style.justifyContent = "center"
+        address.style.alignItems = "center"
+        address.style.flexDirection = "column"
+        addressbar.appendChild(address)
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-solid fa-location-dot")
+        icon.style.fontSize = "40px"
+        icon.style.color = "green"
+        icon.style.position = "absolute"
+        icon.style.left = "24%"
+        // icon.style.alignSelf="flex-start"
+        address.appendChild(icon)
+
+        var heading = document.createElement("h1")
+        heading.innerHTML = "OUR OFFICE"
+        heading.style.fontSize = "20px"
+        heading.style.marginLeft = "-20px"
+        heading.style.fontWeight = "600"
+        address.appendChild(heading)
+
+        var addressh1 = document.createElement("p")
+        addressh1.innerHTML = "123 Street, New York, USA"
+        addressh1.style.color = "slategrey"
+        addressh1.style.marginLeft = "50px"
+        addressh1.style.marginTop = "5px"
+        address.appendChild(addressh1)
+
+        var address = document.createElement("div")
+        address.style.width = "33%"
+        address.style.height = "12vh"
+        address.style.border = "1px solid silver "
+        address.style.position = "relative"
+        address.style.display = "flex"
+        address.style.justifyContent = "center"
+        address.style.alignItems = "center"
+        address.style.flexDirection = "column"
+        addressbar.appendChild(address)
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-regular fa-envelope-open")
+        icon.style.fontSize = "40px"
+        icon.style.color = "green"
+        icon.style.position = "absolute"
+        icon.style.left = "24%"
+        // icon.style.alignSelf="flex-start"
+        address.appendChild(icon)
+
+        var heading = document.createElement("h1")
+        heading.innerHTML = "EMAIL US"
+        heading.style.fontSize = "20px"
+        heading.style.marginLeft = "-20px"
+        heading.style.fontWeight = "600"
+        address.appendChild(heading)
+
+        var addressh1 = document.createElement("p")
+        addressh1.innerHTML = "mail@domain.com"
+        addressh1.style.color = "slategrey"
+        addressh1.style.marginLeft = "27px"
+        addressh1.style.marginTop = "5px"
+        address.appendChild(addressh1)
+
+        var address = document.createElement("div")
+        address.style.width = "33%"
+        address.style.height = "12vh"
+        address.style.border = "1px solid silver "
+        address.style.position = "relative"
+        address.style.display = "flex"
+        address.style.justifyContent = "center"
+        address.style.alignItems = "center"
+        address.style.flexDirection = "column"
+        addressbar.appendChild(address)
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-solid fa-mobile-screen-button")
+        icon.style.fontSize = "40px"
+        icon.style.color = "green"
+        icon.style.position = "absolute"
+        icon.style.left = "26%"
+        // icon.style.alignSelf="flex-start"
+        address.appendChild(icon)
+
+        var heading = document.createElement("h1")
+        heading.innerHTML = "CALL US"
+        heading.style.fontSize = "20px"
+        heading.style.marginLeft = "-20px"
+        heading.style.fontWeight = "600"
+        address.appendChild(heading)
+
+        var addressh1 = document.createElement("p")
+        addressh1.innerHTML = "+012 345 6789"
+        addressh1.style.color = "slategrey"
+        addressh1.style.marginLeft = "10px"
+        addressh1.style.marginTop = "5px"
+        address.appendChild(addressh1)
+
+
+
+        // <<<<<<<<<<<<<<<<<<<<<<<<<<header>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        let header = document.createElement("div")
+        header.style.height = "15vh"
+        // header.style.border = "1px solid black"
+        header.style.display = "flex"
+        header.style.justifyContent = "space-between"
+        document.body.appendChild(header)
+
+        let logo = document.createElement("div")
+        // logo.style.border = "1px solid black"
+        logo.style.width = "max-content"
+        logo.style.display = "flex"
+        logo.style.margin = "25px 40px"
+        header.appendChild(logo)
+
+        let headericon = document.createElement("i")
+        headericon.setAttribute("class", "fa-solid fa-house-laptop")
+        headericon.style.color = "green"
+        headericon.style.fontSize = "40px"
+        logo.appendChild(headericon)
+
+        let headerh1 = document.createElement("h1")
+        headerh1.innerHTML = "PET SHOP"
+        headerh1.style.marginLeft = "20px"
+        headerh1.style.color = " rgb(49, 45, 45)"
+        logo.appendChild(headerh1)
+
+        let nav = document.createElement("div")
+        // nav.style.border = "1px solid red"
+        header.appendChild(nav)
+
+        let navul = document.createElement("ul")
+        // navul.style.border = "1px solid green"
+        navul.style.display = "flex"
+        navul.style.padding = ""
+        navul.style.listStyle = "none"
+        header.appendChild(navul)
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "HOME"
+        ulli.style.margin = "0 20px"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontWeight = "700"
+        ulli.style.fontSize = "17px"
+        ulli.style.color = "#7AB730"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "ABOUT"
+        ulli.style.margin = "0 20px"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontWeight = "700"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "SERVICE"
+        ulli.style.margin = "0 20px"
+        ulli.style.fontWeight = "700"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "PRODUCT"
+        ulli.style.margin = "0 20px"
+        ulli.style.fontWeight = "700"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "PAGES"
+        ulli.style.margin = " 0 20px"
+        ulli.style.fontWeight = "700"
+        ulli.style.padding = "30px 0"
+        ulli.style.fontSize = "17px"
+        navul.appendChild(ulli)
+
+        var ulli = document.createElement("li")
+        ulli.innerHTML = "CONTACT"
+        ulli.style.border = "2x solid blue"
+        ulli.style.backgroundColor = "#7AB730"
+        ulli.style.color = "white"
+        ulli.style.boxSizing = "border-box"
+        ulli.style.padding = "30px 50px"
+        ulli.style.marginLeft = " 10px"
+        ulli.style.fontWeight = "500"
+        ulli.style.fontSize = "20px"
+        navul.appendChild(ulli)
+
+
+        // <<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+        var top2 = document.createElement("div")
+console.log(top2);
+document.body.appendChild(top2)
+top2.style.height="25vh"
+top2.style.width="85%"
+top2.style.margin="60px auto"
+// top2.style.background="red"
+top2.style.paddingLeft="50px"
+top2.style.boxSizing="border-box"
+top2.style.borderLeft="5px solid #7AB730"
+
+
+var heading6 = document.createElement("h1")
+console.log(heading6);
+top2.appendChild(heading6)
+heading6.innerHTML="PRODUCTS"
+heading6.style.fontSize="23px"
+heading6.style.color="#7AB730"
+heading6.style.textTransform="capitalize"
+
+var heading7 = document.createElement("h1")
+console.log(heading7);
+top2.appendChild(heading7)
+heading7.innerHTML="OUR EXCELLENT PET <br> CARE SERVICES"
+heading7.style.fontSize="40px"
+heading7.style.color="black"
+heading7.style.lineHeight="50px"
+heading7.style.marginTop="15px"
+heading7.style.textTransform="capitalize"
+
+
+// con3-------------
+
+var con3 = document.createElement("div")
+console.log(con3);
+document.body.appendChild(con3)
+con3.style.height="100vh"
+con3.style.width="85%"
+con3.style.margin="auto"
+con3.style.display="flex"
+con3.style.flexWrap="wrap"
+con3.style.justifyContent="space-between"
+// con3.style.border="1px solid red"
+con3.style.marginTop="50px"
+
+// one----------------
+
+var one = document.createElement("div")
+console.log(one);
+con3.appendChild(one)
+one.style.height="25%"
+one.style.display="flex"
+one.style.width="45%"
+one.style.background="#F3F3F3"
+
+
+var left2 = document.createElement("div")
+console.log(left2);
+one.appendChild(left2)
+left2.style.height="100%"
+left2.style.width="25%"
+// left2.style.background="red"
+left2.style.display="flex"
+left2.style.justifyContent="center"
+left2.style.alignItems="center"
+
+var icon2 =document.createElement("i")
+console.log(icon2)
+left2.appendChild(icon2)
+icon2.setAttribute("class","fa-solid fa-house")
+icon2.style.color="#7AB730"
+icon2.style.fontSize="60px"
+
+
+var right2 = document.createElement("div")
+console.log(right2);
+one.appendChild(right2)
+right2.style.height="100%"
+right2.style.width="75%"
+// right2.style.background="green"
+
+var heading9 = document.createElement("h1")
+console.log(heading9);
+right2.appendChild(heading9)
+heading9.innerHTML="PET BOARDING"
+heading9.style.fontSize="20px"
+heading9.style.color="black"
+heading9.style.opacity="0.6"
+heading9.style.textTransform="capitalize"
+heading9.style.marginTop="10px"
+
+var para6 = document.createElement("p")
+console.log(para6);
+right2.appendChild(para6)
+para6.innerHTML="Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit"
+para6.style.fontSize="16px"
+para6.style.color="black"
+para6.style.opacity="0.6"
+para6.style.marginTop="10px"
+
+var para5 = document.createElement("p")
+console.log(para5);
+right2.appendChild(para5)
+para5.innerHTML="read more"
+para5.style.fontSize="16px"
+para5.style.color="#7AB730"
+para5.style.textTransform="capitalize"
+para5.style.marginTop="10px"
+para5.style.display="inline-block"
+
+var icon3= document.createElement("i")
+console.log(icon3);
+right2.appendChild(icon3)
+icon3.setAttribute("class","fa-solid fa-arrow-right-long")
+icon3.style.color="#7AB730"
+icon3.style.fontSize="20px"
+icon3.style.marginLeft="10px"
+icon3.style.verticalAlign="bottom"
+
+
+// two----------------
+
+var two = document.createElement("div")
+console.log(two);
+con3.appendChild(two)
+two.style.height="25%"
+two.style.width="45%"
+two.style.display="flex"
+two.style.background="#F3F3F3"
+two.style.float="right"
+
+var left3 = document.createElement("div")
+console.log(left3);
+two.appendChild(left3)
+left3.style.height="100%"
+left3.style.width="25%"
+// left3.style.background="red"
+left3.style.display="flex"
+left3.style.justifyContent="center"
+left3.style.alignItems="center"
+
+var icon2 =document.createElement("i")
+console.log(icon2)
+left3.appendChild(icon2)
+icon2.setAttribute("class","fa-solid fa-house")
+icon2.style.color="#7AB730"
+icon2.style.fontSize="60px"
+
+
+var right3 = document.createElement("div")
+console.log(right3);
+two.appendChild(right3)
+right3.style.height="100%"
+right3.style.width="75%"
+// right3.style.background="green"
+
+var heading9 = document.createElement("h1")
+console.log(heading9);
+right3.appendChild(heading9)
+heading9.innerHTML="PET BOARDING"
+heading9.style.fontSize="20px"
+heading9.style.color="black"
+heading9.style.opacity="0.6"
+heading9.style.textTransform="capitalize"
+heading9.style.marginTop="10px"
+
+var para7 = document.createElement("p")
+console.log(para7);
+right3.appendChild(para7)
+para7.innerHTML="Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit"
+para7.style.fontSize="16px"
+para7.style.color="black"
+para7.style.opacity="0.6"
+para7.style.marginTop="10px"
+
+var para8 = document.createElement("p")
+console.log(para8);
+right3.appendChild(para8)
+para8.innerHTML="read more"
+para8.style.fontSize="16px"
+para8.style.color="#7AB730"
+para8.style.textTransform="capitalize"
+para8.style.marginTop="10px"
+para8.style.display="inline-block"
+
+var icon3= document.createElement("i")
+console.log(icon3);
+right3.appendChild(icon3)
+icon3.setAttribute("class","fa-solid fa-arrow-right-long")
+icon3.style.color="#7AB730"
+icon3.style.fontSize="20px"
+icon3.style.marginLeft="10px"
+icon3.style.verticalAlign="bottom"
+
+// three----------
+
+var three = document.createElement("div")
+console.log(three);
+con3.appendChild(three)
+three.style.height="25%"
+three.style.display="flex"
+three.style.width="45%"
+three.style.background="#F3F3F3"
+
+var left4 = document.createElement("div")
+console.log(left4);
+three.appendChild(left4)
+left4.style.height="100%"
+left4.style.width="25%"
+// left4.style.background="red"
+left4.style.display="flex"
+left4.style.justifyContent="center"
+left4.style.alignItems="center"
+
+var icon4 =document.createElement("i")
+console.log(icon4)
+left4.appendChild(icon4)
+icon4.setAttribute("class","fa-solid fa-house")
+icon4.style.color="#7AB730"
+icon4.style.fontSize="60px"
+
+var right4 = document.createElement("div")
+console.log(right4);
+three.appendChild(right4)
+right4.style.height="100%"
+right4.style.width="75%"
+// right4.style.background="green"
+
+var heading10 = document.createElement("h1")
+console.log(heading10);
+right4.appendChild(heading10)
+heading10.innerHTML="PET BOARDING"
+heading10.style.fontSize="20px"
+heading10.style.color="black"
+heading10.style.opacity="0.6"
+heading10.style.textTransform="capitalize"
+heading10.style.marginTop="10px"
+
+var para9 = document.createElement("p")
+console.log(para9);
+right4.appendChild(para9)
+para9.innerHTML="Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit"
+para9.style.fontSize="16px"
+para9.style.color="black"
+para9.style.opacity="0.6"
+para9.style.marginTop="10px"
+
+var para10 = document.createElement("p")
+console.log(para10);
+right4.appendChild(para10)
+para10.innerHTML="read more"
+para10.style.fontSize="16px"
+para10.style.color="#7AB730"
+para10.style.textTransform="capitalize"
+para10.style.marginTop="10px"
+para10.style.display="inline-block"
+
+var icon4= document.createElement("i")
+console.log(icon4);
+right4.appendChild(icon4)
+icon4.setAttribute("class","fa-solid fa-arrow-right-long")
+icon4.style.color="#7AB730"
+icon4.style.fontSize="20px"
+icon4.style.marginLeft="10px"
+icon4.style.verticalAlign="bottom"
+
+// four--------
+
+var four = document.createElement("div")
+console.log(four);
+con3.appendChild(four)
+four.style.height="25%"
+four.style.display="flex"
+four.style.width="45%"
+four.style.background="#F3F3F3"
+four.style.float="right"
+
+
+
+var left5 = document.createElement("div")
+console.log(left5);
+four.appendChild(left5)
+left5.style.height="100%"
+left5.style.width="25%"
+// left5.style.background="red"
+left5.style.display="flex"
+left5.style.justifyContent="center"
+left5.style.alignItems="center"
+
+var icon5=document.createElement("i")
+console.log(icon5)
+left5.appendChild(icon5)
+icon5.setAttribute("class","fa-solid fa-house")
+icon5.style.color="#7AB730"
+icon5.style.fontSize="60px"
+
+var right5 = document.createElement("div")
+console.log(right5);
+four.appendChild(right5)
+right5.style.height="100%"
+right5.style.width="75%"
+// right5.style.background="green"
+
+var heading11 = document.createElement("h1")
+console.log(heading11);
+right5.appendChild(heading11)
+heading11.innerHTML="PET BOARDING"
+heading11.style.fontSize="20px"
+heading11.style.color="black"
+heading11.style.opacity="0.6"
+heading11.style.textTransform="capitalize"
+heading11.style.marginTop="10px"
+
+var para11 = document.createElement("p")
+console.log(para11);
+right5.appendChild(para11)
+para11.innerHTML="Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit"
+para11.style.fontSize="16px"
+para11.style.color="black"
+para11.style.opacity="0.6"
+para11.style.marginTop="10px"
+
+var para12 = document.createElement("p")
+console.log(para12);
+right5.appendChild(para12)
+para12.innerHTML="read more"
+para12.style.fontSize="16px"
+para12.style.color="#7AB730"
+para12.style.textTransform="capitalize"
+para12.style.marginTop="10px"
+para12.style.display="inline-block"
+
+var icon6= document.createElement("i")
+console.log(icon6);
+right5.appendChild(icon6)
+icon6.setAttribute("class","fa-solid fa-arrow-right-long")
+icon6.style.color="#7AB730"
+icon6.style.fontSize="20px"
+icon6.style.marginLeft="10px"
+icon6.style.verticalAlign="bottom"
+
+
+
+// five
+var five = document.createElement("div")
+console.log(five);
+con3.appendChild(five)
+five.style.height="25%"
+five.style.display="flex"
+five.style.width="45%"
+five.style.background="#F3F3F3"
+
+
+var left6 = document.createElement("div")
+console.log(left6);
+five.appendChild(left6)
+left6.style.height="100%"
+left6.style.width="25%"
+// left6.style.background="red"
+left6.style.display="flex"
+left6.style.justifyContent="center"
+left6.style.alignItems="center"
+
+var icon7=document.createElement("i")
+console.log(icon7)
+left6.appendChild(icon7)
+icon7.setAttribute("class","fa-solid fa-house")
+icon7.style.color="#7AB730"
+icon7.style.fontSize="60px"
+
+var right6 = document.createElement("div")
+console.log(right6);
+five.appendChild(right6)
+right6.style.height="100%"
+right6.style.width="75%"
+// right6.style.background="green"
+
+var heading12 = document.createElement("h1")
+console.log(heading12);
+right6.appendChild(heading12)
+heading12.innerHTML="PET BOARDING"
+heading12.style.fontSize="20px"
+heading12.style.color="black"
+heading12.style.opacity="0.6"
+heading12.style.textTransform="capitalize"
+heading12.style.marginTop="10px"
+
+var para13 = document.createElement("p")
+console.log(para13);
+right6.appendChild(para13)
+para13.innerHTML="Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit"
+para13.style.fontSize="16px"
+para13.style.color="black"
+para13.style.opacity="0.6"
+para13.style.marginTop="10px"
+
+var para14 = document.createElement("p")
+console.log(para14);
+right6.appendChild(para14)
+para14.innerHTML="read more"
+para14.style.fontSize="16px"
+para14.style.color="#7AB730"
+para14.style.textTransform="capitalize"
+para14.style.marginTop="10px"
+para14.style.display="inline-block"
+
+var icon8= document.createElement("i")
+console.log(icon8);
+right6.appendChild(icon8)
+icon8.setAttribute("class","fa-solid fa-arrow-right-long")
+icon8.style.color="#7AB730"
+icon8.style.fontSize="20px"
+icon8.style.marginLeft="10px"
+icon8.style.verticalAlign="bottom"
+
+// six
+var six = document.createElement("div")
+console.log(six);
+con3.appendChild(six)
+six.style.height="25%"
+six.style.width="45%"
+six.style.display="flex"
+six.style.background="#F3F3F3"
+
+
+var left7 = document.createElement("div")
+console.log(left7);
+six.appendChild(left7)
+left7.style.height="100%"
+left7.style.width="25%"
+// left7.style.background="red"
+left7.style.display="flex"
+left7.style.justifyContent="center"
+left7.style.alignItems="center"
+
+var icon9=document.createElement("i")
+console.log(icon9)
+left7.appendChild(icon9)
+icon9.setAttribute("class","fa-solid fa-house")
+icon9.style.color="#7AB730"
+icon9.style.fontSize="60px"
+
+var right7 = document.createElement("div")
+console.log(right7);
+six.appendChild(right7)
+right7.style.height="100%"
+right7.style.width="75%"
+// right7.style.background="green"
+
+var heading15 = document.createElement("h1")
+console.log(heading15);
+right7.appendChild(heading15)
+heading15.innerHTML="PET BOARDING"
+heading15.style.fontSize="20px"
+heading15.style.color="black"
+heading15.style.opacity="0.6"
+heading15.style.textTransform="capitalize"
+heading15.style.marginTop="10px"
+
+var para15 = document.createElement("p")
+console.log(para15);
+right7.appendChild(para15)
+para15.innerHTML="Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit"
+para15.style.fontSize="16px"
+para15.style.color="black"
+para15.style.opacity="0.6"
+para15.style.marginTop="10px"
+
+var para16 = document.createElement("p")
+console.log(para16);
+right7.appendChild(para16)
+para16.innerHTML="read more"
+para16.style.fontSize="16px"
+para16.style.color="#7AB730"
+para16.style.textTransform="capitalize"
+para16.style.marginTop="10px"
+para16.style.display="inline-block"
+
+var icon10= document.createElement("i")
+console.log(icon10);
+right7.appendChild(icon10)
+icon10.setAttribute("class","fa-solid fa-arrow-right-long")
+icon10.style.color="#7AB730"
+icon10.style.fontSize="20px"
+icon10.style.marginLeft="10px"
+icon10.style.verticalAlign="bottom"
+
+// <<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>
+
+
+let secondlast = document.createElement("div")
+        secondlast.style.width = "100%"
+        secondlast.style.height = "100vh"
+        secondlast.style.backgroundImage="url(testimonial.jpg)"
+        // secondlast.style.backgroundPositionY="10px"
+        secondlast.style.backgroundRepeat="no-repeat"
+        secondlast.style.backgroundSize="cover"
+        secondlast.style.position="relative"
+        // secondlast.style.border = "1px solid black"
+        document.body.appendChild(secondlast)
+
+        let secondlastwritten=document.createElement("div")
+        secondlastwritten.style.width="50%"
+        secondlastwritten.style.height="60%"
+        secondlastwritten.style.position="absolute"
+        secondlastwritten.style.top="15%"
+        secondlastwritten.style.right="5%"
+        secondlastwritten.style.display="flex"
+        secondlastwritten.style.flexDirection="column"
+        secondlastwritten.style.justifyContent=-"center"
+        secondlastwritten.style.alignItems="center"
+        secondlastwritten.style.padding="50px"
+        secondlastwritten.style.backgroundColor="white"
+        secondlast.appendChild(secondlastwritten)
+
+        let secondlastwrittenpic=document.createElement("img")
+        secondlastwrittenpic.setAttribute("src" , "testimonial-2.jpg")
+        secondlastwrittenpic.style.width="100px"
+        secondlastwrittenpic.style.height="100px"
+        secondlastwritten.appendChild(secondlastwrittenpic)
+
+        var secondLastwrittenp=document.createElement("p")
+        secondLastwrittenp.innerHTML="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur hic accusamus dignissimos aut cumque, in maiores dolore vitae magnam dolorum consequuntur omnis suscipit mollitia nostrum voluptatem totam quasi?"
+        secondLastwrittenp.style.margin="20px 0"
+        secondLastwrittenp.style.lineHeight="24px"
+        secondLastwrittenp.style.fontSize="16px"
+        secondLastwrittenp.style.color="grey"
+        secondlastwritten.appendChild(secondLastwrittenp)
+
+        var secondLastwrittenh3=document.createElement("h3")
+        secondLastwrittenh3.innerHTML="CLIENT NAME"
+        secondlastwritten.appendChild(secondLastwrittenh3)
+
+        var secondLastwrittenp=document.createElement("p")
+        secondLastwrittenp.innerHTML="profession"
+        secondLastwrittenp.style.margin="20px 0"
+        secondLastwrittenp.style.color="grey"
+        secondlastwritten.appendChild(secondLastwrittenp)
+
+
+
+
+        // <<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+        let footer=document.createElement("div")
+        footer.style.height="50vh"
+        // footer.style.border="1px solid black"
+        footer.style.display="flex"
+        footer.style.paddingLeft="40px"
+        footer.style.paddingTop="30px"
+        footer.style.justifyContent="center"
+        // footer.style.alignItems="center"
+        footer.style.backgroundColor="#F3F3F3"
+        document.body.appendChild(footer)
+        
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="GET IN TOUCH"
+        footerh2.style.color="#212121"
+        footercard1.appendChild(footerh2)
+
+        var footerp1=document.createElement("p")
+        footerp1.innerHTML="No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor"
+        footerp1.style.color= "#6A6565"
+        footerp1.style.margin="20px 0"
+        footerp1.style.fontSize="17px"
+        footerp1.style.letterSpacing="0.5px"
+        footercard1.appendChild(footerp1)
+
+        var footericon=document.createElement("i")
+        footericon.setAttribute("class","fa-solid fa-location-dot")
+        footericon.style.color= "#7AB730"
+        footericon.style.margin="10px 0"
+        footercard1.appendChild(footericon)
+
+        var footerp2=document.createElement("span")
+        footerp2.innerHTML="123 Street, New York, USA"
+        footerp2.style.marginLeft="10px"
+        footerp2.style.color= "#6A6565"
+        footercard1.appendChild(footerp2)
+
+        var footercard1div=document.createElement("div")
+        // footercard1div.style.border="1px black solid"
+        footercard1.appendChild(footercard1div)
+
+        var footericon=document.createElement("i")
+        footericon.setAttribute("class", "fa-regular fa-envelope-open")
+        footericon.style.color= "#7AB730"
+        footericon.style.margin="10px 0"
+        footercard1div.appendChild(footericon)
+
+        var footerp2=document.createElement("span")
+        footerp2.innerHTML="mail@domain.com"
+        footerp2.style.margin="0 10px"
+        footerp2.style.color= "#6A6565"
+        footercard1div.appendChild(footerp2)
+
+        var footericon=document.createElement("i")
+        footericon.setAttribute("class","fa-solid fa-phone")
+        footericon.style.color= "#7AB730"
+        footericon.style.margin="10px 0"
+        footercard1.appendChild(footericon)
+
+        var footerp2=document.createElement("span")
+        footerp2.innerHTML="+012 345 67890"
+        footericon.style.margin="10px 0"
+        footerp2.style.marginLeft="10px"
+        footerp2.style.color= "#6A6565"
+        footercard1.appendChild(footerp2)
+
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="QUICK LINKS"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footercard1.appendChild(footerh2)
+
+        var footerul=document.createElement("ul")
+        // footerul.style.border="2px solid red"
+        footerul.style.width="200px"
+        footerul.style.listStyle="None"
+        footerul.style.margin="10px 0"
+        footercard1.appendChild(footerul)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Home"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="About Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Meet The Team"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Our Services"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Latest Blog"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Contact Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.paddingLeft="30px"
+        footerli.style.fontWeight="500"
+        footerul.appendChild(footerli)
+
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="POPULAR LINKS"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footercard1.appendChild(footerh2)
+
+        var footerul=document.createElement("ul")
+        // footerul.style.border="2px solid red"
+        footerul.style.width="200px"
+        footerul.style.listStyle="None"
+        footerul.style.margin="10px 0"
+        footercard1.appendChild(footerul)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Home"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="About Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Meet The Team"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Our Services"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Latest Blog"
+        footerli.style.color= "#6A6565"
+        footerli.style.fontWeight="500"
+        footerli.style.paddingLeft="30px"
+        footerul.appendChild(footerli)
+
+        var footerli=document.createElement("li")
+        footerli.style.height="0px"
+        footerli.style.margin="5px 0"
+        footerul.appendChild(footerli)
+
+        var footerliicon=document.createElement("i")
+        footerliicon.setAttribute("class","fa-solid fa-right-long")
+        footerliicon.style.color= "#7AB730"
+        footerliicon.style.margin="9px 0"
+        footerli.appendChild(footerliicon)
+
+        var footerli=document.createElement("li")
+        footerli.innerHTML="Contact Us"
+        footerli.style.color= "#6A6565"
+        footerli.style.paddingLeft="30px"
+        footerli.style.fontWeight="500"
+        footerul.appendChild(footerli)
+
+        var footercard1=document.createElement("div")
+        footercard1.style.width="25%"
+        footercard1.style.height="max-content"
+        footercard1.style.padding="20px"
+        // footercard1.style.border="1px solid red"
+        footer.appendChild(footercard1)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="NEWSLETTER"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footercard1.appendChild(footerh2)
+
+        let footerinput=document.createElement("input")
+        footerinput.style.height="50px"
+        footerinput.style.width="120px"
+        footerinput.setAttribute("placeholder" , "Your Email")
+        footerinput.style.padding="0 10px"
+        footerinput.style.fontSize="16px"
+        footercard1.appendChild(footerinput)
+
+        let button=document.createElement("button")
+        button.innerHTML="SIGN UP"
+        button.style.color="white"
+        button.style.backgroundColor="#7AB730"
+        button.style.border="none"
+        button.style.height="48px"
+        button.style.width="80px"
+        button.style.fontSize="17px"
+        footercard1.appendChild(button)
+
+        var footerh2=document.createElement("h3")
+        footerh2.innerHTML="FOLLOW US"
+        footerh2.style.color="#212121"
+        footerh2.style.margin="10px 0"
+        footerh2.style.fontSize="14px"
+        footercard1.appendChild(footerh2)
+
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" , "fa-brands fa-twitter")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" ,"fa-brands fa-square-facebook")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px 6px"
+        footericons.style.margin="0 5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" , "fa-brands fa-linkedin")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px 6px"
+        // footericons.style.margin="0 5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        
+        var footericons = document.createElement("i")
+        footericons.setAttribute("class" , "fa-brands fa-instagram")
+        footericons.style.border="1px solid rgb(122, 183, 48)"
+        footericons.style.padding="5px 6px"
+        footericons.style.margin="0 5px"
+        footericons.style.color="rgb(122, 183, 48)"
+        footercard1.appendChild(footericons)
+
+        var extrafooter=document.createElement("div")
+        extrafooter.style.height="10vh"
+        extrafooter.style.backgroundColor="#F3F3F3"
+        document.body.appendChild(extrafooter)
+
+        var extraaa=document.createElement("p")
+        extraaa.innerHTML="Terms & Conditions | Privacy Policy | Customer Support | Payments | Help | FAQs"
+        extraaa.style.textAlign="center"
+        extraaa.style.color="#6A6565"
+        extraaa.style.fontSize="18px"
+        extrafooter.appendChild(extraaa)
+
+        let extra1=document.createElement("div")
+        extra1.style.height="10vh"
+        extra1.style.backgroundColor="#212121"
+        extra1.style.padding="1px"
+        document.body.appendChild(extra1)
+
+        // let extra1pp=document.createElement=("div")
+        // extra1pp.style.border="3px solid red"
+        // extra1pp.style.backgroundColor="red"
+        // extra1.appendChild(extra1pp)
+
+        var extra1p=document.createElement("p")
+        extra1p.innerHTML="© Your Site Name. All Rights Reserved."
+        extra1p.style.color="white"
+        extra1p.style.width="max-content"
+        extra1p.style.margin="20px 100px"
+        extra1.appendChild(extra1p)
+
+        var extra1p=document.createElement("p")
+        extra1p.innerHTML="Designed by HTML Codex"
+        extra1p.style.color="white"
+        extra1p.style.width="max-content"
+        extra1p.style.margin="0px 1050px"
+        extra1p.style.marginTop="-40px"
+        extra1.appendChild(extra1p)
+
+</script>
+    
+</body>
+</html>
